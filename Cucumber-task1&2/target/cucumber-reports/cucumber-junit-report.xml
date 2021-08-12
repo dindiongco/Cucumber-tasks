@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="3.959">
+    <testcase classname="Calculator addition behaviour" name="Integer addition" time="0.013">
+        <system-out><![CDATA[Given a calculator..........................................................passed
+Given the number 2..........................................................passed
+And the second number 8.....................................................passed
+When the numbers are added..................................................passed
+Then the result should be 10................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Calculator addition behaviour" name="Varying values integer addition" time="0.002">
+        <system-out><![CDATA[Given a calculator..........................................................passed
+Given the number 4..........................................................passed
+And the second number 3.....................................................passed
+When the numbers are added..................................................passed
+Then the result should be 7.................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Calculator addition behaviour" name="Varying values integer addition 2" time="0.002">
+        <system-out><![CDATA[Given a calculator..........................................................passed
+Given the number 7..........................................................passed
+And the second number 52....................................................passed
+When the numbers are added..................................................passed
+Then the result should be 59................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Navigate to Bing" name="Goes to Bing" time="3.771">
+        <system-out><![CDATA[When I request www.bing.com.................................................passed
+And I search for doge.......................................................passed
+Then I am on the bing page for doge.........................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
