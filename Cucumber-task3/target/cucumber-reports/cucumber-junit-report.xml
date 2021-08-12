@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="9.764">
+    <testcase classname="Register on Demo site" name="Goes to demo site" time="3.717">
+        <system-out><![CDATA[When I request www.thedemosite.co.uk........................................passed
+And I click Add a user......................................................passed
+Then I am on the register page..............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Register on Demo site" name="Register details" time="2.88">
+        <system-out><![CDATA[Given I enter the username bobthebuilder....................................passed
+And I enter my password yesican.............................................passed
+When I click submit.........................................................passed
+Then I register my details..................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Register on Demo site" name="Login successfully" time="2.997">
+        <failure message="expected:&lt;**[Failed] Login**&gt; but was:&lt;**[Successful] Login**&gt;" type="org.junit.ComparisonFailure"><![CDATA[Given I am on the login page................................................passed
+And enter the username bobthebuilder........................................passed
+And enter my password yesican...............................................passed
+When I click login..........................................................passed
+Then I login successfully...................................................failed
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<**[Failed] Login**> but was:<**[Successful] Login**>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.qa.cucumber.stepdefs.DemoSiteStepDefs.i_login_successfully(DemoSiteStepDefs.java:92)
+	at ✽.I login successfully(classpath:features/register-demosite.feature:22)
+]]></failure>
+    </testcase>
+</testsuite>
